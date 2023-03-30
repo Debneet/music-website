@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:site" content="website" />
+        <meta name="twitter:title" content="DJV CAD Mini Project" />
+        <meta name="twitter:description" content="This is a webplayer that plays songs" />
+        <meta name="twitter:image" content="./Media/Image/logoicon.jpeg" />
+
+        <meta property='og:title' content='Musicalsmth' />
+        <meta property='og:type' content="website" />
+        <meta property='og:description' content='This is a webpage which plays Songs' />
+        <meta property="og:image" content='./Media/Image/logoicon.jpeg' />
+        <meta name="theme-color" content="#F4C2C2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Media/logohead.jpg" type="image/x-icon">
+    <title id="head">DJV CAD Mini Project</title>
+
+  
+  
+
+    <!-- Import CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body onload="preLoader ()">
+
+    <div id="loading"></div>
+  <!-- Go to Up button -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+  <!-- Burger Navbar  -->
+
+    <header class="header-area">
+        <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+          <div class="logo">
+            <img src="./Media/Image/logocenter.png" alt="logo" style="middle">
+            <!-- first page para-->
+          </div>
+          <div class="paragraph">
+            <p><b>Hey Everyone! Glad to see you all here. This is a simple yet amazing music player website that plays random songs from the playlist. Go ahead and have fun :)</b></p> </div>
+
+         <div class="menu-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#songs">Songs</a></li>
+           <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- HOME PAGE -->
+  
+    
+
+    <section class="container" id="home">
+        <div class="content">
+            <div class="left-col">
+               <h1 id="mytext"> I <br> Like <br> Me <br> Better </h1>
+               
+     <div class="right-col">
+                <p>Click Here To Listen --»</p>
+                <img src="./Media/Image/play.png" alt="play-button" id="icon">
+             
+        </div>
+        </div>
+
+        <audio id="mySong">
+            <source src="./Media/Songs/I Like Me Better - Lauv.mp3" type="audio/mp3">
+        </audio>
+          </div>
+    </section>
+
+<!-- Songs button area -->
+  <section class="Songs-button" id="songs">
+        <div class="container-songs">
+          <div class="texto">
+          <h2> <span>Select The Songs </span></h2>
+          </div>
+  
+          <div class="lolbutt">
+            <br><br><br><br><a>
+                        <button type="button"> Kesariya</button>
+                    </a>
+            
+            <a>
+                        <button type="button" >I Like Me Better</button>
+            </a>
+            <a>
+                        <button type="button" >Gul</button>
+            </a>
+            <a>
+                        <button type="button" >Naatu Naatu</button>
+            </a>
+            <a>
+                        <button type="button" >Apna Bana Le</button>
+            </a>
+            <a>
+                        <button type="button" >Dance Ka Bhoot</button>
+            </a>
+            <a>
+                        <button type="button" >Dil Diyan Gallan</button>
+            </a>
+            <a>
+                        <button type="button" >Perfect</button>
+            </a>
+            <a>
+                        <button type="button" >Tu/You</button>
+            </a>
+            <a>
+                        <button type="button" >Mazaak</button>
+              </a>
+            <a>
+                        <button type="button" >Chaand Baliyan</button>
+  </a>
+<a>
+                        <button type="button" >Namo Namo</button>
+</a>
+             
+             <script>
+               const btns = document.querySelectorAll(".lolbutt button");
+    
+      
+        btns[0].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+          const icon = document.getElementById("icon");
+  const song = document.getElementById("mySong");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+          const hed = document.getElementById("head");
+          
+ photo.src = "./Media/Image/kesariya.jpg";
+    song.src = "./Media/Songs/kesariya.mp3";
+          icon.src = "./Media/Image/play.png";
+
+    text.innerHTML = " Kesariya";
+    hed.innerHTML = " Kesariya";
+
+    par.innerHTML = "Kesariya is a romantic Hindi song sung by the Indian playback singer Arijit Singh, composed by Pritam, penned by Amitabh Bhattacharya. The song has a soothing and soulful melody that is inspired by traditional Rajasthani music. The lyrics of the song express the protagonist's deep love for his beloved and his desire to be with her forever. The music features a blend of Indian classical and folk instruments, creating a serene and romantic atmosphere. Overall, Kesariya is a beautiful and heartfelt romantic track that captures the essence of true love and the emotions that come with it. ";
+        });
+               btns[1].addEventListener("click", function () {
+                 const photo1 = document.getElementById("photos");
+const icon = document.getElementById("icon");
+
+  const song1 = document.getElementById("mySong");
+  const text1 = document.getElementById("mytext");
+  const par1 = document.getElementById("para");
+                 const hed1 = document.getElementById("head");
+                 
+
+    
+ 
+    photo1.src = "./Media/Image/about-img.png";
+icon.src = "./Media/Image/play.png";
+
+    song1.src = "./Media/Songs/I Like Me Better - Lauv.mp3";
+    text1.innerHTML = " I <br> Like <br> Me <br> Better";
+    hed1.innerHTML = " I Like Me Better";
+
+    par1.innerHTML = "“I Like Me Better” is a song recorded by American singer-songwriter Lauv. It was released on May 19, 2017, and is included on Lauv's compilation album I Met You When I Was 18, which was released on May 31, 2018. It has also been used in an Android Auto app commercial, in the trailer of Netflix's romantic comedy To All the Boys I've Loved Before, and in the fall ball episode of Netflix's comedy series The Expanding Universe of Ashley Garcia.";
+        });
+               btns[2].addEventListener("click", function () {
+                 const photo2 = document.getElementById("photos");
+                 const icon = document.getElementById("icon");
+  const song2 = document.getElementById("mySong");
+  const text2 = document.getElementById("mytext");
+  const par2 = document.getElementById("para");
+                 const hed2 = document.getElementById("head");
+
+    
+ 
+    photo2.src = "./Media/Image/gul.png";
+                 icon.src = "./Media/Image/play.png";
+    song2.src = "./Media/Songs/gul.mp3";
+    text2.innerHTML = "Gul";
+    hed2.innerHTML = "Gul";
+
+    par2.innerHTML = "Gul is a Hindi song by Indian singer-songwriter Anuv Jain. The song has a mellow and soothing melody with a strong influence of Indian classical music. The lyrics of the song reflect on the transience of life and the importance of cherishing every moment. The word 'gul' in the title means flower, and the lyrics use the imagery of flowers to express the fragility of life and the beauty that can be found in it. The music is minimalistic, featuring acoustic guitar and gentle percussion, allowing the lyrics and Anuv's vocals to take center stage. Overall, Gul is a reflective and poignant track that encourages us to appreciate the simple things in life and live in the moment.";
+        });
+                       btns[3].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+                         const icon = document.getElementById("icon");
+  const song = document.getElementById("mySong");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+  const hed = document.getElementById("head");
+			
+ 
+    photo.src = "./Media/Image/naatu.jpg";
+                         icon.src = "./Media/Image/play.png";
+    song.src = "./Media/Songs/naatu.mp3";
+    text.innerHTML = " Naatu <br> Naatu";
+                        hed.innerHTML = "Naatu Naatu";
+    par.innerHTML = "Naatu Naatu is a song composed by M. M. Keeravani, with lyrics by Chandrabose and recorded by Rahul Sipligunj and Kaala Bhairava for the soundtrack album of the 2022 Indian film RRR. 'Naatu Naatu' from RRR created history at the 95th Academy Awards. It won the Oscar for Best Original Song, becoming the first ever Indian song to do so. ";
+        });
+               btns[4].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+                 const icon = document.getElementById("icon");
+  const song = document.getElementById("mySong");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+const hed = document.getElementById("head");
+			
+ 
+    photo.src = "./Media/Image/apnabanale.jpg";
+                 icon.src = "./Media/Image/play.png";
+    song.src = "./Media/Songs/ApnaBanaLe.mp3";
+    text.innerHTML = " Apna <br> Bana <br> Le ";
+    hed.innerHTML = " Apna Bana Le ";
+
+    par.innerHTML = "Apna Bana Le is a Hindi romantic song sung by Indian playback singer Arijit Singh. The song features a blend of contemporary and traditional music with a strong influence of Indian classical music. The melody is soothing and harmonious, while the lyrics express the desire of the protagonist to win the heart of his beloved and make her his own. The song has a nostalgic feel to it and evokes the feeling of first love and the sweetness of its memories. Overall, Apna Bana Le is a beautiful and melodious track that captures the essence of falling in love and the longing to be with someone special. ";
+        });
+               btns[5].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+  const song = document.getElementById("mySong");
+                 const icon = document.getElementById("icon");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+  const hed = document.getElementById("head");
+			
+ 
+    photo.src = "./Media/Image/dance.jpg";
+                 icon.src = "./Media/Image/play.png";
+    song.src = "./Media/Songs/dance.mp3";
+    text.innerHTML = " Dance <br> Ka <br> Bhoot ";
+    hed.innerHTML = "Dance Ka Bhoot";
+
+    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Baaraat’ that is ready to twirl up emotions and make you feel the jitters. ";
+        });
+               btns[6].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+  const song = document.getElementById("mySong");
+                 const icon = document.getElementById("icon");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+  const hed = document.getElementById("head");
+			
+ 
+    photo.src = "./Media/Image/dil.jpg";
+                 icon.src = "./Media/Image/play.png";
+    song.src = "./Media/Songs/dildiyangallan.mp3";
+    text.innerHTML = " Dil <br> Diyan <br> Gallan";
+    hed.innerHTML = "Dil Diyan Gallan";
+
+    par.innerHTML = "Dil Diyan Gallan is a romantic Hindi song from the Indian movie Tiger Zinda Hai, sung by Atif Aslam. The song has a soulful melody with a touch of Sufi music and features acoustic guitar, piano, and strings. The lyrics of the song express the emotions of two lovers who are deeply in love and share a strong bond. The music video features the lead actors Salman Khan and Katrina Kaif, portraying the romance and intimacy between their characters. Overall, Dil Diyan Gallan is a beautiful and heartfelt romantic track that captures the essence of true love and the emotions that come with it. ";
+        });
+btns[7].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+  const icon = document.getElementById("icon");
+  const song = document.getElementById("mySong");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+  const hed = document.getElementById("head");
+			
+ 
+    photo.src = "./Media/Image/perfect.jpg";
+  icon.src = "./Media/Image/play.png";
+    song.src = "./Media/Songs/perfect.mp3";
+    text.innerHTML = " Perfect";
+    hed.innerHTML = "Perfect ";
+
+    par.innerHTML = "Perfect is a romantic pop song by the English singer-songwriter Ed Sheeran. The song is about falling in love with someone and imagining a future together. It features Ed's signature acoustic guitar sound and his heartfelt vocals. The lyrics are simple yet poignant, painting a vivid picture of love and commitment. Perfect has become a popular wedding song and is widely regarded as one of Ed Sheeran's most successful and beloved tracks. Overall, Perfect is a beautifully crafted love song that captures the essence of true love and affection. ";
+        });
+               btns[8].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+                 const icon = document.getElementById("icon");
+  const song = document.getElementById("mySong");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+          const hed = document.getElementById("head");
+          
+ photo.src = "./Media/Image/you.jpg";
+    song.src = "./Media/Songs/you.mp3";
+                 icon.src = "./Media/Image/play.png";
+
+    text.innerHTML = " Tu/You";
+    hed.innerHTML = "Tu/You";
+
+    par.innerHTML = "Tu/You is a bilingual song sung by Armaan Malik in Hindi and English. The song is a thank you note and a warm hug for his fans who have supported him throughout his musical journey. The song is composed by Armaan Malik, Jack Edwards, Natania Lalwani and Felicia Ferraro, with lyrics by Kunaal Vermaa, Jack Edwards, Natania Lalwani and Felicia Ferraro. The song features Armaan Malik and Shalini Pandey in a performance video ";
+        });
+               btns[9].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+  const song = document.getElementById("mySong");
+                 const icon = document.getElementById("icon");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+          const hed = document.getElementById("head");
+          
+ photo.src = "./Media/Image/mazaak.jpg";
+                 icon.src = "./Media/Image/mazaak.png";
+    song.src = "./Media/Songs/mazaak.mp3";
+
+    text.innerHTML = "Mazaak";
+    hed.innerHTML = "Mazaak";
+
+    par.innerHTML = "I dont think that I needs to explain much about this song just close your eyes and try to feel it but for now I am just gonna tell ya' for the context that how absurd is it that when we least expect love, it still finds us? And when it does, we hope that it isn’t a Mazaak, it isn’t a joke… ";
+        });
+               btns[10].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+                 const icon = document.getElementById("icon");
+  const song = document.getElementById("mySong");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+          const hed = document.getElementById("head");
+          
+ photo.src = "./Media/Image/chand.jpg";
+                 icon.src = "./Media/Image/play.png";
+    song.src = "./Media/Songs/chand.mp3";
+
+    text.innerHTML = "Chaand <br> Baaliyan";
+    hed.innerHTML = "Chaand Baaliyan";
+
+    par.innerHTML = "Chaand Baaliyan is a romantic song sung by Aditya A, who also composed and wrote the song. The song is about a boy who falls in love with a girl who wears moon-shaped earrings. The song has a catchy tune and a viral hook step that has been recreated by many influencers and fans. The song features Rajat Dakol and Anchal Sharma as the lead pair, and has been directed by Shivam Sharma ";
+        });
+btns[11].addEventListener("click", function () {
+          const photo = document.getElementById("photos");
+  const icon = document.getElementById("icon");
+  const song = document.getElementById("mySong");
+  const text = document.getElementById("mytext");
+  const par = document.getElementById("para");
+          const hed = document.getElementById("head");
+          
+ photo.src = "./Media/Image/namo.jpg";
+  icon.src = "./Media/Image/play.png";
+    song.src = "./Media/Songs/namo.mp3";
+
+    text.innerHTML = "Namo <br> Namo";
+    hed.innerHTML = "Namo Namo";
+
+    par.innerHTML = "Namo Namo is a devotional song dedicated to Lord Shiva, sung by Amit Trivedi and composed by Amit Trivedi and Amitabh Bhattacharya. The song features Sushant Singh Rajput as a porter who carries pilgrims to the holy shrine of Kedarnath, while Sara Ali Khan plays his love interest. The song captures the scenic beauty of Kedarnath and the spiritual journey of the characters ";
+        });
+    window.addEventListener("click", function () {
+if (mySong.paused) {
+  const icon = document.getElementById("icon");
+const mySong = document.getElementById("mySong");
+  icon.src = "./Media/Image/play.png"
+}
+             });
+
+                                   </script>
+        </div>
+</div>
+  </section>
+          
+    <!-- ABOUT SECTION -->
+
+    <section class="about-area" id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about-image">
+                    <img src="./Media/Image/about-img.png" alt="About us" class="img-fluid" id="photos">
+                  
+                </div>
+
+                <div class="about-title">
+                    <h2>
+                        <span>About Song...</span>
+                    </h2>
+                    <div class="paragraph">
+                        <p id="para">
+                            "I Like Me Better" is a song recorded by American singer-songwriter Lauv. It was released on
+                            May 19, 2017, and is included on Lauv's compilation album I Met You When I Was 18, which was
+                            released on May 31, 2018. It has also been used in an Android Auto app commercial, in the
+                            trailer of Netflix's romantic comedy To All the Boys I've Loved Before, and in the fall ball
+                            episode of Netflix's comedy series The Expanding Universe of Ashley Garcia.
+                        </p>
+                    
+                    </div>
+                    <a href="./Media/Songs/I Like Me Better - Lauv.mp3" download="İ like me better">
+                    
+                        <button type="button">Download Song</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-area" id="contact">
+        <h1>CONTACT ME ON SOCIAL MEDIA</h1>
+      <!-- I haven't added my social links down here but you can do that by simple pasting your lines in href -->
+        <div class="social-media">
+            <a href="https://www.instagram.com/debneet518/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.facebook.com/db.db.1297943/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+            <a href="https://www.linkedin.com/in/debneet-balabantaray-444064249" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+            <a href="https://twitter.com/debneet518" target="_blank"><i class="fab fa-twitter"></i></a>
+
+            <a href="https://github.com/Debneet" target="_blank"><i class="fab fa-github"></i></a>
+
+        </div>
+         <p  class="devimg">
+            <img src="./Media/Image/devimgupdated.png" alt="dev" style="width: 95%; height: 75%;">
+
+              </p>
+       
+    </footer>
+<!-- Import JS File -->
+    <script src="./script.js"> </script>
+  
+</body>
+
+</html>
